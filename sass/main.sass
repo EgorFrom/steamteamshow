@@ -1,0 +1,69 @@
+body
+	margin: 0
+	font-family: 'Equestria_Cyrillic', sans-serif
+	background-color: gray
+	::selection
+		background: #f9ba05
+	::-moz-selection
+		background: #f9ba05
+a
+	text-decoration: none
+	color: #ccc
+header
+	background: transparent url(../img/header/bg-header.png) center no-repeat
+	min-height: 129px
+	position: fixed
+	z-index: 4
+	top: -40px
+	padding-top: 55px
+	width: 100%
+	left: 0
+	.header
+		&-table
+			transform: translateX(150px)
+			text-shadow: 9px 0 29px rgba(62, 65, 62, 0.57)
+			color: #fbecc1
+			font-family: "Equestria_Cyrillic"
+			font-size: 24px
+			font-weight: 400
+			line-height: 24px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				width: 90px
+				height: 100px
+				left: -80px
+				top: -30px
+				background: transparent url(../img/header/clock-header.png) center no-repeat
+				background-size: cover
+		&-number
+			text-shadow: 9px 0 29px rgba(62, 65, 62, 0.57)
+			color: #f9ba05
+			font-family: "Equestria_Cyrillic"
+			font-size: 30px
+			font-weight: 400
+			line-height: 8px
+			text-transform: uppercase
+			// Text style for "+7 (965) 3"
+			letter-spacing: 3px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				width: 90px
+				height: 80px
+				left: -90px
+				top: -30px
+				background: transparent url(../img/header/phone-header.png) center no-repeat
+				background-size: cover
+
+*
+	outline: none
+
+@import 'interface'
+@import 'first-screen'
+
+
+@import 'media'
+

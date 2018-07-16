@@ -1,0 +1,56 @@
+.first-screen
+	min-height: 100vh
+	background: transparent url(../img/first-screen/background.jpg) center no-repeat
+	background-size: cover
+	margin-top: 60px
+	position: relative
+	z-index: 1
+	overflow: hidden
+	&_smoke
+		position: absolute
+		width: 100%
+		height: 100%
+		z-index: 2
+		background: transparent url(../img/first-screen/smoke.png) center no-repeat
+		background-size: cover
+		transition: all 0.5s ease
+		animation: smoke-move 10s linear infinite
+.first-screen-menu
+	position: absolute
+	z-index: 5
+	top: 15px
+	left: 14.6%
+	width: 367px
+	height: 767px
+	background: transparent url(../img/first-screen/main-menu.png) center no-repeat
+	background-size: cover
+	padding-top: 130px
+	&_item
+		text-align: center
+		margin-top: 132px
+		color: #fbecc1
+		font-family: "Equestria_Cyrillic"
+		font-size: 30px
+		font-weight: 400
+		line-height: 8px
+		text-transform: uppercase
+		letter-spacing: 1.5px
+		&:hover
+			cursor: pointer
+			color: #ce9a05
+		&:nth-child(1)
+			font-size: 24px
+		.name-team
+			letter-spacing: 0.01px
+
+
+@keyframes smoke-move
+	from
+		opacity: 0.1
+		transform: translateX(5px) translateY(-2px)
+	50%
+		opacity: 1
+		transform: translateX(0px) translateY(0px)
+	to
+		opacity: 0.1
+		transform: translateX(5px) translateY(-2px)

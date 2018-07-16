@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: 'Equestria_Cyrillic', sans-serif;
+  background-color: gray;
+}
+
+body ::-moz-selection {
+  background: #f9ba05;
+}
+
+body ::selection {
+  background: #f9ba05;
+}
+
+body ::-moz-selection {
+  background: #f9ba05;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+header {
+  background: transparent url("../img/header/bg-header.png") center no-repeat;
+  min-height: 129px;
+  position: fixed;
+  z-index: 4;
+  top: -40px;
+  padding-top: 55px;
+  width: 100%;
+  left: 0;
+}
+
+header .header-table {
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
+  text-shadow: 9px 0 29px rgba(62, 65, 62, 0.57);
+  color: #fbecc1;
+  font-family: "Equestria_Cyrillic";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+}
+
+header .header-table:after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 100px;
+  left: -80px;
+  top: -30px;
+  background: transparent url("../img/header/clock-header.png") center no-repeat;
+  background-size: cover;
+}
+
+header .header-number {
+  text-shadow: 9px 0 29px rgba(62, 65, 62, 0.57);
+  color: #f9ba05;
+  font-family: "Equestria_Cyrillic";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 8px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+header .header-number:after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  left: -90px;
+  top: -30px;
+  background: transparent url("../img/header/phone-header.png") center no-repeat;
+  background-size: cover;
+}
+
+* {
+  outline: none;
+}
+
+.first-screen {
+  min-height: 100vh;
+  background: transparent url("../img/first-screen/background.jpg") center no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.first-screen_smoke {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: transparent url("../img/first-screen/smoke.png") center no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: smoke-move 10s linear infinite;
+  animation: smoke-move 10s linear infinite;
+}
+
+.first-screen-menu {
+  position: absolute;
+  z-index: 5;
+  top: 15px;
+  left: 14.6%;
+  width: 367px;
+  height: 767px;
+  background: transparent url("../img/first-screen/main-menu.png") center no-repeat;
+  background-size: cover;
+  padding-top: 130px;
+}
+
+.first-screen-menu_item {
+  text-align: center;
+  margin-top: 132px;
+  color: #fbecc1;
+  font-family: "Equestria_Cyrillic";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.first-screen-menu_item:hover {
+  cursor: pointer;
+  color: #ce9a05;
+}
+
+.first-screen-menu_item:nth-child(1) {
+  font-size: 24px;
+}
+
+.first-screen-menu_item .name-team {
+  letter-spacing: 0.01px;
+}
+
+@-webkit-keyframes smoke-move {
+  from {
+    opacity: 0.1;
+    -webkit-transform: translateX(5px) translateY(-2px);
+    transform: translateX(5px) translateY(-2px);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px);
+  }
+
+  to {
+    opacity: 0.1;
+    -webkit-transform: translateX(5px) translateY(-2px);
+    transform: translateX(5px) translateY(-2px);
+  }
+}
+
+@keyframes smoke-move {
+  from {
+    opacity: 0.1;
+    -webkit-transform: translateX(5px) translateY(-2px);
+    transform: translateX(5px) translateY(-2px);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) translateY(0px);
+  }
+
+  to {
+    opacity: 0.1;
+    -webkit-transform: translateX(5px) translateY(-2px);
+    transform: translateX(5px) translateY(-2px);
+  }
+}
+
+@media (max-width: 1300px) {
+  .first-screen-menu {
+    left: 10%;
+  }
+}
