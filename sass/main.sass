@@ -2,6 +2,7 @@ body
 	margin: 0
 	font-family: 'Equestria_Cyrillic', sans-serif
 	background-color: gray
+	overflow-x: hidden
 	::selection
 		background: #f9ba05
 	::-moz-selection
@@ -12,15 +13,21 @@ a
 header
 	background: transparent url(../img/header/bg-header.png) center no-repeat
 	min-height: 129px
-	position: fixed
+	position: relative
 	z-index: 4
 	top: -40px
 	padding-top: 55px
 	width: 100%
 	left: 0
+	overflow: hidden
 	.header
+		&-item
+			min-width: 220px
+			margin-right: 150px
 		&-table
-			transform: translateX(150px)
+			margin-left: 140px
+			margin-right: 0px
+			text-align: center
 			text-shadow: 9px 0 29px rgba(62, 65, 62, 0.57)
 			color: #fbecc1
 			font-family: "Equestria_Cyrillic"
@@ -28,16 +35,19 @@ header
 			font-weight: 400
 			line-height: 24px
 			position: relative
+			letter-spacing: 2px
 			&:after
 				content: ''
 				position: absolute
-				width: 90px
-				height: 100px
+				width: 100px
+				height: 110px
 				left: -80px
 				top: -30px
 				background: transparent url(../img/header/clock-header.png) center no-repeat
 				background-size: cover
 		&-number
+			transform: translateX(-25.3%)
+			position: relative
 			text-shadow: 9px 0 29px rgba(62, 65, 62, 0.57)
 			color: #f9ba05
 			font-family: "Equestria_Cyrillic"
@@ -47,13 +57,12 @@ header
 			text-transform: uppercase
 			// Text style for "+7 (965) 3"
 			letter-spacing: 3px
-			position: relative
 			&:after
 				content: ''
 				position: absolute
 				width: 90px
 				height: 80px
-				left: -90px
+				left: -83px
 				top: -30px
 				background: transparent url(../img/header/phone-header.png) center no-repeat
 				background-size: cover
@@ -63,6 +72,10 @@ header
 
 @import 'interface'
 @import 'first-screen'
+@import 'about'
+@import 'conditions'
+@import 'features'
+@import 'photocards'
 
 
 @import 'media'
