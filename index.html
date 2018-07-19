@@ -241,7 +241,78 @@
 	<!-- /.features popup -->
 		
 	<section class="photocards">
-		
+		<div class="photocards-slider_wrapper">
+			<div class="photocards-slider">
+				<div class="photocards-block">
+					<div class="photocards-block_img">
+						<img src="img/photocards/azot.jpg" alt="Азотное шоу">
+					</div>
+					<!-- /.photocards-block_img -->
+					<div class="photocards-block_name">
+					<img src="img/photocards/sub_image.png" alt="Азотное шоу для детей">
+					Азотное шоу</div>
+					<!-- /.photocards-block_name -->
+				</div>
+				<!-- /.photocards-block -->
+				<div class="photocards-block">
+					<div class="photocards-block_img">
+						<img src="img/photocards/icecream.jpg" alt="Шоу с мороженным химия">
+					</div>
+					<!-- /.photocards-block_img -->
+					<div class="photocards-block_name">
+					<img src="img/photocards/sub_image.png" alt="Шоу химия для детей">
+					MК "Мороженное"</div>
+					<!-- /.photocards-block_name -->
+				</div>
+				<!-- /.photocards-block -->
+				<div class="photocards-block">
+					<div class="photocards-block_img">
+						<img src="img/photocards/phisic.jpg" alt="Физическое шоу">
+					</div>
+					<!-- /.photocards-block_img -->
+					<div class="photocards-block_name">
+					<img src="img/photocards/sub_image.png" alt="Физика шоу для детей">
+					Физическое шоу</div>
+					<!-- /.photocards-block_name -->
+				</div>
+				<!-- /.photocards-block -->
+				<div class="photocards-block">
+					<div class="photocards-block_img">
+						<img src="img/photocards/tesla.jpg" alt="Тесла шоу">
+					</div>
+					<!-- /.photocards-block_img -->
+					<div class="photocards-block_name">
+					<img src="img/photocards/sub_image.png" alt="Познавательное шоу для детей о физике">
+					Тесла шоу</div>
+					<!-- /.photocards-block_name -->
+				</div>
+				<!-- /.photocards-block -->
+				<div class="photocards-block">
+					<div class="photocards-block_img">
+						<img src="img/photocards/so_close_1.jpg" alt="Скоро новый детский мастер-класс о науке">
+					</div>
+					<!-- /.photocards-block_img -->
+					<div class="photocards-block_name">
+					<img src="img/photocards/sub_image.png" alt="Новый детский мастер-класс">
+					Мастер-класс</div>
+					<!-- /.photocards-block_name -->
+				</div>
+				<!-- /.photocards-block -->
+				<div class="photocards-block">
+					<div class="photocards-block_img">
+						<img src="img/photocards/so_close_2.jpg" alt="Скоро новое детское шоу">
+					</div>
+					<!-- /.photocards-block_img -->
+					<div class="photocards-block_name">
+					<img src="img/photocards/sub_image.png" alt="Новое детское шоу о науке">
+					Новое шоу</div>
+					<!-- /.photocards-block_name -->
+				</div>
+				<!-- /.photocards-block -->
+			</div>
+			<!-- /.photocards-slider -->
+		</div>
+		<!-- /.photocards-slider_wrapper -->
 	</section>
 	<!-- /.photocards -->
 
@@ -259,6 +330,17 @@
 			arrows: false,
 			autoplay: true,
 			autoplaySpeed: 25000
+		});
+		$('.photocards-slider').slick({
+			centerMode: true,
+			dots: false,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			speed: 1000,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			prevArrow: '<div class="photocards-slider-arrow photocards-slider-arrow_left"></div>',
+			nextArrow: '<div class="photocards-slider-arrow photocards-slider-arrow_right"></div>'
 		});
 	</script>
 	<script src="js/wow.min.js"></script>
